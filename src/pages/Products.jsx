@@ -28,11 +28,11 @@ export default function Products() {
 
     function FilteredProduct() {
 
-        if (maxPrice !== null) {
-            setProdoctList(budgetProdocts)
+        if (maxPrice === "" || maxPrice == null) {
 
-        } else if (maxPrice === "") {
             setProdoctList(prodocts)
+        } else {
+            setProdoctList(budgetProdocts)
 
         }
 

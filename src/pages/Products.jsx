@@ -39,7 +39,7 @@ export default function Products() {
     }
 
     useEffect(FilteredProduct, [maxPrice])
-    console.log(maxPrice)
+
 
 
 
@@ -48,7 +48,7 @@ export default function Products() {
         <>
 
             <main>
-                <h1>{maxPrice}</h1>
+
                 <div className="container">
                     <div className="row">
                         {

@@ -1,9 +1,7 @@
 
-import Header from "../components/Header";
-
-
 
 export default function HomePage() {
+
 
 
     return (
@@ -11,8 +9,8 @@ export default function HomePage() {
 
             <main>
                 <div className="container">
-                    <h1>Benvenuto nel nostro store</h1>
-                    <p>conmprateve tutto!!!</p>
+                    <h1>Benvenuto </h1>
+                    <p>Siamo uno store work in progres, per favore dateci un vostro feedback</p>
                 </div>
             </main>
 

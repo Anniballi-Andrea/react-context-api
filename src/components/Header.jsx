@@ -1,6 +1,12 @@
+
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import BudgetContext from "../context/BudgetContext"
+
 
 export default function Header() {
+
+    const prova = useContext(BudgetContext)
 
 
     return (
@@ -34,6 +40,7 @@ export default function Header() {
 
                         </ul>
                     </div>
+                    <button className="btn">budget Mode:  </button>
                 </div>
             </nav>
         </header>

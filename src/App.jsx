@@ -11,7 +11,8 @@ import { useState } from "react";
 
 function App() {
 
-  const [budgetMode, setBudgetMode] = useState(false)
+  //const [budgetMode, setBudgetMode] = useState(false)
+  const [budgetMode, setBudgetMode] = useState(null)
 
 
   return (

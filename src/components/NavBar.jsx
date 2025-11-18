@@ -45,6 +45,7 @@ export default function NavBar() {
 
                     </ul>
                 </div>
+                <input type="number" onChange={(e) => setBudgetMode(e.target.value)} />
                 <button className="btn" onClick={toggleBudgetMode}>budget Mode: {budgetMode ? "on" : "off"} </button>
             </div>
         </nav>

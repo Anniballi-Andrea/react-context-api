@@ -12,7 +12,7 @@ export default function Products() {
     const [prodoctList, setProdoctList] = useState([])
 
 
-    const budgetProdocts = prodocts.filter((prodoct) => prodoct.price <= 30)
+    const budgetProdocts = prodocts.filter((prodoct) => prodoct.price <= budgetMode)
 
 
     function fetchProdocts() {

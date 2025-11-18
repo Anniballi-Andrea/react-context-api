@@ -1,7 +1,5 @@
 
-import { useContext } from "react";
 
-import BudgetContext from "../context/BudgetContext"
 import NavBar from "./NavBar";
 
 

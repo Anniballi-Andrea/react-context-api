@@ -11,12 +11,13 @@ import { useState } from "react";
 
 function App() {
 
-  //const [budgetMode, setBudgetMode] = useState(false)
-  const [budgetMode, setBudgetMode] = useState(null)
+  const [budgetMode, setBudgetMode] = useState(false)
+  //const [budgetMode, setBudgetMode] = useState(null)
+  const [maxPrice, setMaxPrice] = useState(null)
 
 
   return (
-    <BudgetContext.Provider value={{ budgetMode, setBudgetMode }}>
+    <BudgetContext.Provider value={{ budgetMode, setBudgetMode, maxPrice, setMaxPrice }}>
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayouts />}>

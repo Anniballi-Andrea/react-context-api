@@ -3,7 +3,7 @@ import { useContext } from "react";
 import BudgetContext from "../context/BudgetContext"
 
 export default function NavBar() {
-    const { budgetMode, setBudgetMode } = useContext(BudgetContext)
+    const { budgetMode, setBudgetMode, maxPrice, setMaxPrice } = useContext(BudgetContext)
 
     function toggleBudgetMode() {
         if (budgetMode) {
@@ -45,8 +45,8 @@ export default function NavBar() {
 
                     </ul>
                 </div>
-                <input type="number" onChange={(e) => setBudgetMode(e.target.value)} />
-                <button className="btn" onClick={toggleBudgetMode}>budget Mode: {budgetMode ? "on" : "off"} </button>
+                <input type="number" onChange={(e) => setMaxPrice(e.target.value)} />
+                <button className="btn" onClick={toggleBudgetMode}>budget Mode: {maxPrice/*budgetMode ? "on" : "off"*/} </button>
             </div>
         </nav>
     )
